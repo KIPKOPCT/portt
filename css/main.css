@@ -8,7 +8,6 @@
     --light-green: #AEDCB3;
     --dark-green: #06923e;
     --darr-green: #1C3526;
-
     --black: #212121;
     --orange: #e67514;
 }
@@ -144,10 +143,9 @@ body {
 
 /* Hero Section */
 .hero {
-  padding: 120px 0 80px;
+  position: relative;
+  overflow: hidden;
   min-height: 100vh;
-  display: flex;
-  align-items: center;
 }
 
 .hero-container {
@@ -237,31 +235,11 @@ body {
   border-radius: 150px;
 }
 
-.hero-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.profile-circle {
+
+.profile-circle img {
   width: 400px;
-  height: 400px;
-  background: linear-gradient(135deg, #00ff88, #00cc6a);
-  border-radius: 50%;
-  position: relative;
 }
-
-.profile-circle::before {
-  content: '';
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  right: 20px;
-  bottom: 20px;
-  background-color: #1a1a1a;
-  border-radius: 50%;
-}
-
 
 
 /* Services Section */
@@ -727,8 +705,9 @@ body {
 
 /* Contact Section */
 .contact {
-  padding: 80px 0;
+  padding: 80px;
   background-color: #222222;
+  
 }
 
 .contact-content {
@@ -737,9 +716,10 @@ body {
   gap: 60px;
 }
 
-.container {
+.container-c {
   background-color: var(--darr-green);
   border-radius: 30px;
+  padding: 20px;
 }
 
 .contact-form-section h2 {
@@ -865,7 +845,7 @@ body {
 
 /* Testimonials Section */
 .testimonials {
-  padding: 80px 0;
+  padding: 80px;
   background-color: var(--green);
 }
 
