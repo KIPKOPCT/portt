@@ -178,3 +178,29 @@ style.textContent = `
   }
 `;
 document.head.appendChild(style);
+
+ // Auto sliding animation
+ function shuffleCards(sliderId) {
+      const track = document.getElementById(sliderId);
+      const cards = Array.from(track.children);
+      for (let i = cards.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        track.appendChild(cards[j]);
+        cards.splice(j, 1);
+      }
+    }
+
+    setInterval(() => {
+      shuffleCards('slider1');
+      shuffleCards('slider2');
+      shuffleCards('slider3');
+    }, 30000);
+
+    //serivices card
+      function goToProject(url) {
+            document.body.style.transition = 'opacity 0.5s ease';
+            document.body.style.opacity = 0;
+            setTimeout(() => {
+              window.location.href = url;
+            }, 500);
+          }
