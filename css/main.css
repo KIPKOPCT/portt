@@ -143,127 +143,61 @@ body {
 
 /* Hero Section */
 .hero {
-  position: relative;
-  overflow: hidden;
-  min-height: 100vh;
-  padding-top: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 120px;
 }
 
 .hero-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 60px;
-  align-items: center;
+  padding: 80px;
 }
 
-.content-details {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+.hero-image img {
+  width: 1200px;
 }
 
-.hero-greeting {
-  color: var(--green);
-  font-size: 18px;
-  margin-bottom: 10px;
+.hidden-hero .hidden-images {
+  position: relative;
+  width: 440px;
+  bottom: 560px;
+  left: 80px;
+  opacity: 0;
+}
+.hidden-hero .hidden-images:hover {
+  opacity: 100%;
+  transition: 1s ease-in-out;
 }
 
-.hero-title {
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 1.2;
-  margin-bottom: 10px;
-}
-
-.highlight {
+.hero-container .hero-text {
+  position: absolute;
+  top: 320px;
+  right: 500px;
   color: var(--green);
 }
 
-.hero-subtitle {
-  font-size: 18px;
-  color: #cccccc;
-  margin-bottom: 40px;
+.hero-text .hello-hero {
+  font-size: 30px;
 }
 
-.hero-text-image {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+.hero-text h3{
+  font-size: 60px;
+}
+.hero-text h4{
+  margin-top: -40px;
+  font-size: 50px;
 }
 
-.hero-features {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 30px;
+.hero-tagline {
+  position: absolute;
+  top: 752px;
+  right: 440px;
 }
 
-.feature-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-  flex-wrap: wrap;
-}
-
-.feature-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
-  border: 2px solid #06923e;
-  flex-shrink: 0;
-}
-
-.feature-icon-inside {
-  width: 70px;
-  height: 70px;
-  background-color: var(--green);
-  border-radius: 50%;
-}
-
-.feature-item p {
-  background-color: #d3eccd;
-  color: #212121;
-  font-size: 14px;
-  padding: 5px 20px;
-  border-radius: 150px;
-  max-width: 300px;
-  text-align: center;
-}
-
-.profile-circle img {
-  width: 100%;
-  max-width: 400px;
-}
 
 /* Responsive Design */
 
 /* Medium Devices (Tablets) */
-@media (max-width: 1024px) {
-  .hero-container {
-    grid-template-columns: 1fr;
-    gap: 40px;
-    text-align: center;
-  }
-
-  .hero-title {
-    font-size: 36px;
-  }
-
-  .hero-subtitle {
-    font-size: 16px;
-  }
-
-  .feature-item {
-    flex-direction: row;
-  }
-}
 
 
 /* Services Section */
