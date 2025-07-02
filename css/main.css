@@ -295,7 +295,7 @@ body {
   font-size: 36px;
   font-weight: 600;
   margin-bottom: 20px;
-  color: #ffffff;
+ color: #00cc6a;
 }
 
 .about-text p {
@@ -316,7 +316,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--green);
+  background: linear-gradient(135deg, #ffd700, #ff8c00);
   padding: 10px 15px;
   width: 170px;
   border-radius: 20px 40px;
@@ -700,6 +700,13 @@ body {
   margin-top: 40px;
 }
 
+.social-icon a img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #00cc6a;
+}
+
 .social-icon {
   display: flex;
   align-items: center;
@@ -711,6 +718,7 @@ body {
   cursor: pointer;
   transition: all 0.3s ease;
 }
+
 
 .social-icon:hover {
   background-color: #00cc6a;
@@ -789,7 +797,12 @@ body {
 .client-avatar {
   width: 90px;
   height: 90px;
-  background-color: #333333;
+  border-radius: 30px 30px 200px 30px;
+}
+.client-avatar .client-img {
+  height: 90px;
+  aspect-ratio: 1;
+  background-size: cover;
   border-radius: 30px 30px 200px 30px;
 }
 
