@@ -35,21 +35,24 @@
   <section id="home" class="hero">
     <div class="hero-container">
         <div class="hero-image">
-          <img src="images/My-Profile/hero-bg.png" alt="">
+          <img src="images/My-Profile/hero-image@300x.png" alt="">
         </div>
         <div class="hidden-hero">
           <img class="hidden-images" src="images/My-Profile/here-image.png" alt="">   
         </div>
+        <!--
         <div class="hero-text">
           <p class="hello-hero">-Hello There!</p>
-          <h3>I'm Charles</h3>
+          <h3 class="hero-tex">I'm Charles</h3>
           <h4>Maswanganyi</h4>
           <p>Graphic Designer/Web Developer based in RSA</p>
         </div>
         <div class="hero-tagline">
           <p>Graphic Designer/Web Developer based in RSA // We deliver unparalleled Quality</p>
         </div>
+        -->
   </section>
+
 
   <section class="service-card">
     <h2>Services I Offer</h2>
@@ -66,7 +69,7 @@
 
     <!-- Web Design Project -->
     <div class="card">
-      <img src="/images/cards/card-1.png" alt="Web Design" />
+      <img src="/images/cards/card-2.png" alt="Web Design" />
       <div class="card-content">
         <h3>Web Design</h3>
         <p>Clean and modern UI/UX landing pages for websites and platforms.</p>
@@ -76,7 +79,7 @@
 
     <!-- Web Development Project -->
     <div class="card">
-      <img src="/images/cards/card-1.png" alt="Web Development" />
+      <img src="/images/cards/card-3.png" alt="Web Development" />
       <div class="card-content">
         <h3>Web Development</h3>
         <p>Interactive websites and dashboards built with Code & Heart.</p>
@@ -92,7 +95,7 @@
       <div class="about-content">
         <div class="about-image">
           <div class="about-circle">
-            <img src="/images/design/left-about.png" alt="">
+            <img src="/images/My-Profile/about@300x.png" alt="">
           </div>
         </div>
         <div class="about-text">
@@ -308,27 +311,28 @@
       <div class="contact-content">
         <div class="contact-form-section">
           <h2>Let's Create Something Amazing Together?</h2>
-          <form class="contact-form">
+          <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+            <input type="hidden" name="access_key" value="65f8abbf-a3d2-4ff2-903b-32e714d4d6dc">
             <div class="form-row">
-              <input type="text" placeholder="Your Name" required>
-              <input type="email" placeholder="Your Email" required>
+              <input type="text" name="text" placeholder="Your Name" required>
+              <input type="email" name="Email" placeholder="Your Email" required>
             </div>
             <div class="form-row">
-              <input type="text" placeholder="Subject" required>
-              <input type="tel" placeholder="Phone Number" required>
+              <input type="text" name="Subject" placeholder="Subject" required>
+              <input type="tel" name="tel" placeholder="Phone Number" required>
             </div>
             <div class="form-row">
-              <select required>
+              <select name="select" required>
                 <option value="">Select Service</option>
                 <option value="web-design">Web Design</option>
                 <option value="graphic-design">Graphic Design</option>
                 <option value="development">Development</option>
               </select>
-              <input type="text" placeholder="Budget" required>
+              <input type="text" name="budget" placeholder="Budget" required>
             </div>
-            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
             <div class="contacts-btn">
-              <button type="submit" class="contact-button">Send Message</button>
+              <button type="submit" name="submit" class="contact-button">Send Message</button>
             </div>
           </form>
         </div>
@@ -548,7 +552,8 @@
    
  </section>
 
-  <!-- Footer -->
+  
+ <!-- Footer -->
   <footer class="footer">
     <div class="container">
       <div class="footer-content">
@@ -558,20 +563,47 @@
         </div>
         <nav class="footer-nav">
           <a href="#home">Home</a>
-          <a href="#portfolio">Portfolio</a>
           <a href="#about">About Me</a>
           <a href="#contact">Contact</a>
           <a href="#services">Services</a>
           <a href="#testimonials">Testimonials</a>
         </nav>
         <div class="footer-social">
-          <div class="social-icon"></div>
-          <div class="social-icon"></div>
-          <div class="social-icon"></div>
-          <div class="social-icon"></div>
-          <div class="social-icon"></div>
-          <div class="social-icon"></div>
-          <div class="social-icon"></div>
+          <div class="social-icon">
+            <a href="https://wa.me/message/KKUER4LBPVSPG1"> 
+              <img width="32" height="32" src="https://img.icons8.com/windows/32/whatsapp--v1.png" alt="whatsapp--v1"/>
+            </a>
+          </div>
+          <div class="social-icon">
+            <a href="https://www.facebook.com/kipkop.holeni">
+              <img width="30" height="30" src="https://img.icons8.com/material-outlined/24/facebook-new.png" alt="facebook-new"/>
+            </a>
+          </div>
+          <div class="social-icon">
+            <a href="https://www.instagram.com/">
+              <img width="32" height="32" src="https://img.icons8.com/windows/32/instagram-new.png" alt="instagram-new"/>
+            </a>
+          </div>
+          <div class="social-icon">
+            <a href="https://x.com/">
+              <img width="25" height="25" src="https://img.icons8.com/ios-glyphs/30/twitterx--v2.png" alt="twitterx--v2"/>
+            </a>
+          </div>
+          <div class="social-icon">
+            <a href="https://www.tiktok.com/">
+              <img width="32" height="32" src="https://img.icons8.com/windows/32/tiktok.png" alt="tiktok"/>
+            </a>
+          </div>
+          <div class="social-icon">
+            <a href="https://github.com/KIPKOPCT">
+              <img width="30" height="30" src="https://img.icons8.com/glyph-neue/64/github.png" alt="github"/>
+            </a>
+          </div>
+          <div class="social-icon">
+            <a href="https://discord.com/kipkopct">
+              <img width="30" height="30" src="https://img.icons8.com/ios-filled/50/discord-logo.png" alt="discord-logo"/>
+            </a>
+          </div>
         </div>
       </div>
     </div>

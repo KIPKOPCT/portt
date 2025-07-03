@@ -38,12 +38,12 @@ window.addEventListener('scroll', () => {
     navbar.style.backgroundColor = 'rgba(26, 26, 26, 0.95)';
   }
 });
-
+/*
 // Contact form submission
 const contactForm = document.querySelector('.contact-form');
 contactForm.addEventListener('submit', (e) => {
   e.preventDefault();
-  
+
   // Get form data
   const formData = new FormData(contactForm);
   const formObject = {};
@@ -55,6 +55,7 @@ contactForm.addEventListener('submit', (e) => {
   alert('Thank you for your message! I will get back to you soon.');
   contactForm.reset();
 });
+*/
 
 // Animate elements on scroll
 const observerOptions = {
@@ -78,7 +79,7 @@ document.querySelectorAll('.service-card, .testimonial-card, .timeline-item, .sk
   el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
   observer.observe(el);
 });
-
+/*
 // Skill circle animation
 const skillCircles = document.querySelectorAll('.skill-circle');
 const skillObserver = new IntersectionObserver((entries) => {
@@ -97,6 +98,7 @@ const skillObserver = new IntersectionObserver((entries) => {
 skillCircles.forEach(circle => {
   skillObserver.observe(circle);
 });
+*/
 
 // Add hover effects to buttons
 document.querySelectorAll('.btn-primary, .btn-secondary, .service-btn, .contact-btn').forEach(button => {
@@ -108,17 +110,17 @@ document.querySelectorAll('.btn-primary, .btn-secondary, .service-btn, .contact-
     this.style.transform = 'translateY(0)';
   });
 });
-
+/*
 // Social media icons click handlers (you can replace with actual links)
 document.querySelectorAll('.social-icon').forEach(icon => {
   icon.addEventListener('click', () => {
-    // Replace with actual social media links
     console.log('Social media link clicked');
   });
 });
+*/
 
 // Add typing effect to hero title
-const heroTitle = document.querySelector('.hero-title');
+const heroTitle = document.querySelector('.hero-tex');
 const titleText = heroTitle.innerHTML;
 heroTitle.innerHTML = '';
 

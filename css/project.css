@@ -68,3 +68,149 @@ body {
     border-radius: 20px;
     padding: 10px;
 }
+
+ @media (max-width: 768px) {
+      .project-text h2 {
+        font-size: 2rem;
+      }
+
+      .project-text p {
+        font-size: 1rem;
+      }
+
+      .project-images img {
+        max-width: 90%;
+      }
+
+      .project-images .web-img {
+        max-width: 100%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .project-text h2 {
+        font-size: 1.5rem;
+      }
+
+      .project-text p {
+        font-size: 0.9rem;
+      }
+    }
+
+      .project-text p {
+        font-size: 1rem;
+      }
+
+      .project-images img {
+        max-width: 90%;
+      }
+
+      .project-images .web-img {
+        max-width: 100%;
+      }
+
+
+    @media (max-width: 480px) {
+      .project-text h2 {
+        font-size: 1.5rem;
+      }
+
+      .project-text p {
+        font-size: 0.9rem;
+      }
+    }
+
+        :root {
+      --green: #d3eccd;
+      --light-green: #AEDCB3;
+      --dark-green: #06923e;
+      --darr-green: #1C3526;
+      --black: #212121;
+      --orange: #e67514;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #1a1a1a;
+      color: #ffffff;
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    .projects {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 80px;
+    }
+
+    .projects-container {
+      width: 100%;
+      max-width: 1200px;
+    }
+
+    .project-items {
+      margin-bottom: 60px;
+    }
+
+    .project-text {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .project-text h2 {
+      font-size: 2.5rem;
+      color: var(--green);
+    }
+
+    .project-text p {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+
+    .project-images {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .project-images img {
+      width: 100%;
+      max-width: 320px;
+      border-radius: 20px;
+      padding: 10px;
+      object-fit: cover;
+    }
+
+    .project-images .web-img {
+      max-width: 600px;
+    }
+
+    @media (max-width: 768px) {
+      .project-text h2 {
+        font-size: 2rem;
+      }
+
+      .project-text p {
+        font-size: 1rem;
+      }
+
+      .project-images img {
+        max-width: 90%;
+      }
+
+      .project-images .web-img {
+        max-width: 100%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .project-text h2 {
+        font-size: 1.5rem;
+      }
+
+      .project-text p {
+        font-size: 0.9rem;
+      }
+    }
